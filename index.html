@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizifyAI | Smart Video Summarizer & Quiz Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Quizify<span class="gradient-text">AI</span></div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#demo">Demo</a>
+            <a href="#how-it-works">How it Works</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <img src="hero_bg.png" alt="AI Background" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Turn Videos into <br><span class="gradient-text">Knowledge</span> Instantly</h1>
+            <p class="subtitle">Generate concise summaries, audio abstracts, and interactive quizzes from any video
+                content using advanced artificial intelligence.</p>
+
+            <div class="input-group">
+                <input type="text" id="videoUrl" placeholder="Paste YouTube Video Link here...">
+                <button class="cta-btn" onclick="processVideo()">Generate</button>
+            </div>
+            <div id="loading" style="display: none; margin-top: 1rem; color: var(--accent);">
+                <i class="fas fa-circle-notch fa-spin"></i> Processing video content...
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2 class="section-title">Intelligent <span class="gradient-text">Content Distillation</span></h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-file-alt card-icon"></i>
+                <h3>Smart Summarization</h3>
+                <p>Get concise, readable text summaries derived from video audio streams using semantic analysis.
+                    Perfect for quick reviews of long content.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-headphones card-icon"></i>
+                <h3>Audio Abstracts</h3>
+                <p>Synthesized human-like audio abstracts cater to auditory learners, allowing you to listen to key
+                    insights on the go.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-question-circle card-icon"></i>
+                <h3>Contextual Quizzes</h3>
+                <p>Automated quiz generation aligned with the video's subject matter. Supports formative assessment for
+                    entertainment, tutorials, or educational videos.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-brain card-icon"></i>
+                <h3>Multi-Modal Learning</h3>
+                <p>Fuses speech, text, and visual cues to enrich the fidelity of summaries and ensure quiz relevance
+                    across all genres.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="features" style="background: rgba(255,255,255,0.02);">
+        <h2 class="section-title">Powered by <span class="gradient-text">Next-Gen Technology</span></h2>
+        <div class="grid" style="text-align: center;">
+            <div class="card">
+                <h3>1. ASR Integration</h3>
+                <p>Advanced Automatic Speech Recognition accurately transcribes video audio streams into text.</p>
+            </div>
+            <div class="card">
+                <h3>2. Semantic Analysis</h3>
+                <p>Deep learning models process the transcript to understand context, extract key points, and summarize.
+                </p>
+            </div>
+            <div class="card">
+                <h3>3. Interactive Output</h3>
+                <p>Visual and auditory summaries are paired with generated questions to test retention and engagement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 QuizifyAI. Enhancing content accessibility or retention.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
